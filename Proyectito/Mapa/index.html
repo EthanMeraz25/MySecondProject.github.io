@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+  </head>
+  <body>
+    <div class="page">
+      <header><h1 id="title">Ethan Meraz-My First Web page</h1></header>
+      <div class="main">
+        <h1>My OpenStreetMap</h1>
+        <div id="map"></div>
+      </div>
+    </div>
+    
+    <dialog class="popup" id="mypopup">
+      <form class="form" action="">
+        <div class="inputs">
+          <label for="place-name">Place Name</label>
+          <input class="place-name" 
+          type="text" 
+          minlength="3" 
+          maxlength="28" 
+          required/>
+        </div>
+
+        <div class="inputs">
+          <label for="latitude">latitude</label>
+          <input class= "input-latitude"
+          type="text" 
+          minlength="3" 
+          maxlength="28" 
+          required/>
+        </div>
+
+        <div class="inputs">
+          <label for="longitude">longitude</label>
+          <input class="input-longitude"
+          type="text" 
+          minlength="3" 
+          maxlength="28" 
+          required/>
+        </div>
+        <button class="button-save">SAVE</button>
+        <button class="button-cancel">CANCEL</button>
+
+        <divclass="inputs">
+          <label for="betweenstreets">Between Streets</label>
+          <input class="between-streets"
+          type="text"
+          minlength="3"
+          maxlength="50"
+          required/>
+        </div>
+
+      </form>
+    </dialog>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="./scripts/script.js"></script>
+
+      </form>
+
+  </body>
+</html>
